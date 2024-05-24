@@ -1,53 +1,104 @@
-body{
+body {
+    font-family: Arial, sans-serif;
     background-color: hsl(207, 26%, 17%);
-    color:white ;
-}
-/*Dark Blue (Dark Mode Elements): hsl(209, 23%, 22%)
-- Very Dark Blue (Dark Mode Background): hsl(207, 26%, 17%)
-- Very Dark Blue (Light Mode Text): hsl(200, 15%, 8%)
-- Dark Gray (Light Mode Input): hsl(0, 0%, 52%)
-- Very Light Gray (Light Mode Background): hsl(0, 0%, 98%)
-- White (Dark Mode Text & Light Mode Elements): hsl(0, 0%, 100%)
-*/
-
-#wrapper {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    justify-content: center;
-    gap: 20px;
-    
-
-}
-#wrapper >div{
-   padding: 20px;
-    gap: 20px;
-    width: 200px;
-    height: 200px;
-    border-radius: 8px;
-    background-color:hsl(209, 23%, 22%);
-    }
-    .HD{
-        display: flex;
-        align-items: center;
-    }
-p{
-text-align: left;
-}
-h1{
-    text-align: left;
-}
-h6{
-    text-align: right;
+    color: white;
+    margin: 0;
+    padding: 0;
 }
 
-hd{
-    gap: 100px;
-}
-.header{
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color:hsl(209, 23%, 22%) 
-    
+    background-color: hsl(209, 23%, 22%);
+}
+
+header h1 {
+    margin: 0;
+}
+
+.theme-switch {
+    display: flex;
+    align-items: center;
+}
+
+.theme-switch label {
+    margin-right: 10px;
+}
+
+main {
+    padding: 20px;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#search {
+    width: 300px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: hsl(209, 23%, 22%);
+    color: white;
+}
+
+#region-filter {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: hsl(209, 23%, 22%);
+    color: white;
+}
+
+.countries-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.country-card {
+    background-color: hsl(209, 23%, 22%);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s;
+    color: white;
+}
+
+.country-card:hover {
+    transform: scale(1.05);
+}
+
+.country-card img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+}
+
+.country-card h3, .country-card p {
+    margin: 10px;
+}
+
+body.dark-mode {
+    background-color: white;
+    color: black;
+}
+
+body.dark-mode header {
+    background-color: hsl(0, 0%, 98%);
+    color: black;
+}
+
+body.dark-mode .country-card {
+    background-color: hsl(0, 0%, 98%);
+    color: black;
+}
+
+body.dark-mode #search,
+body.dark-mode #region-filter {
+    background-color: hsl(0, 0%, 98%);
+    color: black;
 }
