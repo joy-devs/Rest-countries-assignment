@@ -56,8 +56,9 @@ main {
 
 .countries-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns:auto auto auto auto ;
     gap: 20px;
+    justify-content: center;
 }
 
 .country-card {
@@ -66,6 +67,9 @@ main {
     overflow: hidden;
     transition: transform 0.2s;
     color: white;
+    width:250px;
+    height: 300px;
+    gap: 20px;
 }
 
 .country-card:hover {
