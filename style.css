@@ -1,0 +1,53 @@
+body{
+    background-color: hsl(207, 26%, 17%);
+    color:white ;
+}
+/*Dark Blue (Dark Mode Elements): hsl(209, 23%, 22%)
+- Very Dark Blue (Dark Mode Background): hsl(207, 26%, 17%)
+- Very Dark Blue (Light Mode Text): hsl(200, 15%, 8%)
+- Dark Gray (Light Mode Input): hsl(0, 0%, 52%)
+- Very Light Gray (Light Mode Background): hsl(0, 0%, 98%)
+- White (Dark Mode Text & Light Mode Elements): hsl(0, 0%, 100%)
+*/
+
+#wrapper {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+    gap: 20px;
+    
+
+}
+#wrapper >div{
+   padding: 20px;
+    gap: 20px;
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+    background-color:hsl(209, 23%, 22%);
+    }
+    .HD{
+        display: flex;
+        align-items: center;
+    }
+p{
+text-align: left;
+}
+h1{
+    text-align: left;
+}
+h6{
+    text-align: right;
+}
+
+hd{
+    gap: 100px;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color:hsl(209, 23%, 22%) 
+    
+}
